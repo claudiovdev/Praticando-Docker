@@ -1,0 +1,4 @@
+# Primeiros comandos do curso de docker
+docker ps - #Eu consigo vizualizar os containers no docker
+docker ps -a # Comando utilizado para visualizar containers existente e que ja morderam.
+docker run mysql # Primeiro ele tenta encontrar a sua imagem local e qaundo nao a ha busca no diretorio e baixa.
