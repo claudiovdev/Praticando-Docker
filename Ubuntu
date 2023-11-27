@@ -1,0 +1,8 @@
+# Como iniciar o ununtu em um container e interar por ele
+docker run -i -t ubuntu:latest bash 
+
+# o comando -i ele vai não vai deixar a nossa imagem finalizar após rodar, ele mantem ela rodando e o -t ( TTY) ele nos permite digitar, rodar comandos dentro do terminar
+
+
+docker run -i -t --rm ubuntu:latest bash 
+# Posso observar que agora eu coloquei um --rm que significa que ao finalizar o container a imagem será removida e apagado do historico
