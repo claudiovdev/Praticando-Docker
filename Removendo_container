@@ -1,0 +1,18 @@
+#Vamos parar e remover containers
+docker stop <id container> 
+
+# Desta forma nós conseguimos pausar um container
+
+#como fazer um container pausado voltar a funcionar.
+
+docker start <id container>
+
+#Desta forma o container volta a funcionar.
+
+#Agora para matar o container nós precisamos usar o comando.
+
+docker rm <id ou nome container>
+
+#Obs: caso o container esteja rodando você vai precisar focar a exclusao estão você -f para forçar a exclusão 
+
+docker rm <id ou nome container> -f
