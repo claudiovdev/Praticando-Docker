@@ -1,0 +1,22 @@
+#Comando para visualizar seus volumes
+docker volumes ls
+
+#Comando para criar um Volume
+docker volume create meuvolume
+
+#Comando para receber informações do volume
+docker volume inspect meuvolume
+
+#Agora vamos criar um container com o nginx e vamos colocar ele ligar ele ao volume
+docker run --name nginx -d -p 8080:80 --mount type:volume, source=meuvolume, target=/app nginx 
+
+#agora vamos criar o volume utilizando o mount
+docker run --name nginx -d -p 8080:80 --mount type=bind source="$(pwd)"/html, target=/usr/share/nginx/html
+
+#Explicando a linha acima
+
+--name ele vai alterar o nome do container para o nome que eu estou passando
+-d ele vai rodar o docker em segundo plano então o terminal vai ficar livre para nós usarmos
+-p nós vamos definir a porta, então estamos falando que nossa aplicação vai ficar livre para ser acessada na porta 8080
+-- mount  é usado para criar os volumes onde nós passando o type que será um bind
+source é o caminho da pasta
