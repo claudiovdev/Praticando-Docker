@@ -1,0 +1,8 @@
+#Utilizanso o docker para rodar o nginx em um container e acessando em uma porta específica
+
+docker run -d -p 8080:80 nginx
+
+#Desta forma eu todo meu nginx em um container
+-d eu consigo definir que ele não vai travar o meu console e o -p eu defino a porta que vamos conseguir acessar ele dentro do container.
+
+que significa que nós vamos conseguir acessar ele na porta 8080
