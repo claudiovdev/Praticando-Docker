@@ -1,0 +1,6 @@
+#criando a imagem e explicando
+
+docker build -t viniciuscfn/nginx:latest .
+#O comando docker build serve para criar a imagem e o -t é a tag da imagem
+que nos colocanos viniciuscfn/nginx e no final nos colocamos o . que significa que na pasta atual que eatamos 
+existe o arquivo dockerfile 
