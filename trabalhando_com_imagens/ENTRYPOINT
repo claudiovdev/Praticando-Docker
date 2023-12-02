@@ -1,0 +1,4 @@
+FROM Ubuntu:latest
+ENTRYPOINT {'eco', 'hellow'}
+
+#ENTRYPOINT e um comando que será 
