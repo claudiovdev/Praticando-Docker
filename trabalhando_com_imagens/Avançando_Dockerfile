@@ -1,0 +1,10 @@
+from nginx:latest
+
+WORKDIR /app
+
+RUN apt-gef update && apt-get install vim -y
+COPY html usar/shared/ngnix
+
+
+#O workdir ele cria uma pasta dentro do container e nós já iniciamos dentro dela.
+#Copy ele faz uma cópia da pasta HTML e joga ela dentro da pasta nginx qu tamb m tem o arquivo html
